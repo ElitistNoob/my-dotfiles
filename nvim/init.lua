@@ -10,8 +10,17 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
+
 vim.wo.number = true
 vim.wo.relativenumber = true
 
 require("vim-options")
-require("lazy").setup("plugins")
+
+require("lazy").setup({
+	spec = "plugins",
+	rocks = {
+		hererocks = {
+			path = vim.fn.stdpath("data") .. "/lazy-rocks",
+		},
+	},
+})
