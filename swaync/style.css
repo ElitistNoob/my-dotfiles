@@ -187,31 +187,6 @@
   border: unset;
 }
 
-./* Volume Slider Container */
-.widget-volume {
-  background-color: rgba(28, 28, 34, 0.1); /* Transparent background */
-  padding: 8px;
-  margin: 8px;
-  border-radius: 12px;
-}
-
-/* Slider Track */
-.widget-volume trough {
-  background-color: #3c3836; /* Dark brown-gray (matches @noti-bg) */
-  border-radius: 12px;
-}
-
-/* Slider Handle */
-.widget-volume trough slider {
-  background-color: #dd623d; /* Yellow from your theme */
-  border-radius: 50%;
-}
-
-/* Volume Icons (Mute/Volume Levels) */
-.widget-volume image {
-  color: #ebdbb2; /* Light yellow text color */
-}
-
 widget-mpris > box > button:hover {
   background: transparent;
   border: unset;
@@ -231,6 +206,11 @@ widget-mpris > box > button:hover {
 
 .widget-mpris-subtitle {
   font-size: 1.1rem;
+}
+
+.widget-mpris-album-art {
+  border-radius: 20px;
+  margin: 8px 0 0 8px;
 }
 
 .widget-buttons-grid {
@@ -265,17 +245,21 @@ widget-mpris > box > button:hover {
   background: transparent;
 }
 
-/* Volume Slider Container */
 .widget-volume {
-  background-color: @noti-bg-darker; /* Transparent background */
-  padding: 8px;
-  margin: 8px;
-  border-radius: 12px;
+  background-color: @noti-bg-darker;
+  padding: 0 0 0 10px;
+  border-radius: 4px;
+}
+
+.widget-volume label {
+  font-size: 32px;
+  color: @noti-text;
+  border: unset;
 }
 
 /* Slider Track */
 .widget-volume trough {
-  background-color: #3c3836; /* Dark brown-gray (matches @noti-bg) */
+  background-color: @noti-bg;
   border-radius: 12px;
   min-height: 4px; /* Track thickness */
   border: unset;
@@ -286,15 +270,17 @@ widget-mpris > box > button:hover {
   border-radius: 50%;
 }
 
-/* Volume Icons (Mute/Volume Levels) */
-.widget-volume image {
-  color: @noti-text; /* Light yellow text color */
+scale {
+  background-color: transparent;
+  margin: 0 0 0 16px;
 }
 
 scale highlight {
   all: unset;
   background-color: #dd623d;
   border-radius: 6px;
+  min-height: 8px;
+  min-width: unset;
 }
 
 scale slider {
