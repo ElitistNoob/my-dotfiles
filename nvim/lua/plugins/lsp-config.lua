@@ -39,6 +39,7 @@ return {
           },
         },
       })
+      lspconfig.gdscript.setup({ capabilities = capabilities })
       lspconfig.gopls.setup({
         capabilities = capabilities,
       })
@@ -63,6 +64,9 @@ return {
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>sg", function()
+        vim.fn.serverstart("127.0.0.1:6004")
+      end, { noremap = true })
     end,
   },
 }
