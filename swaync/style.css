@@ -252,7 +252,7 @@ widget-mpris > box > button:hover {
 }
 
 .widget-volume label {
-  font-size: 32px;
+  font-size: 24px;
   color: @noti-text;
   border: unset;
 }

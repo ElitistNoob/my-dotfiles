@@ -13,9 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.keymap.set("i", "<Tab>", "<Esc>", { noremap = true, silent = true })
 
 require("vim-options")
-
 require("lazy").setup({
 	spec = "plugins",
 	rocks = {
