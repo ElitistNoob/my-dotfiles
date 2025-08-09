@@ -43,6 +43,9 @@ return {
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.hyprls.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.golangci_lint_ls.setup({
 				capabilities = capabilities,
 			})
