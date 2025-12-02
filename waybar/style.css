@@ -44,6 +44,14 @@ button:hover {
   background-color: @mantle;
   color: @text;
   margin: 5px 1px;
+  box-shadow: 0 0 2px 0 rgba(255,255,255,0.1);
+  background-color: @white;
+  color: @mantle;
+}
+
+#workspaces button.empty {
+  background-color: transparent;
+  color: @white;
 }
 
 #workspaces button:hover {

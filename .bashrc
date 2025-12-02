@@ -24,4 +24,4 @@ export PATH=$PATH:$HOME/go/bin
 
 eval "$(zoxide init bash)"
 
-neofetch
+fastfetch

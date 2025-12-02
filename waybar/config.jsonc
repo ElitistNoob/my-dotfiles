@@ -5,9 +5,9 @@
   "height": 30,
   "width": 2560,
   "spacing": 1,
-  "modules-left": ["hyprland/workspaces", "tray", "hyprland/mode", "mpris"],
+  "modules-left": ["hyprland/workspaces", "niri/workspaces", "tray", "hyprland/mode", "mpris"],
   "reload_style_on_change": true,
-  "modules-center": ["hyprland/window"],
+  "modules-center": ["hyprland/window", "niri/window"],
   "modules-right": [
     "hyprland/scratchpad",
     "idle_inhibitor",
@@ -24,6 +24,28 @@
     "custom/notification"
   ],
 
+  "niri/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "1": "󰊖",
+      "2": "󰊴",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": "",
+      "urgent": "",
+      //         "focused": "",
+      // "default": "",
+    },
+  },
+
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
@@ -34,6 +56,7 @@
       "2": "󰊴",
       "3": "",
       "4": "",
+      "5": "",
       "6": "",
       "7": "",
       "8": "",
@@ -56,6 +79,9 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
   },
   "hyprland/mode": {
+    "format": "<span style=\"italic\">{}</span>",
+  },
+  "niri/mode": {
     "format": "<span style=\"italic\">{}</span>",
   },
   "mpris": {
@@ -203,6 +229,6 @@
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
-    "escape": true,
+    "escape": true
   },
 }

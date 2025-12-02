@@ -1,6 +1,6 @@
 #!/bin/bash
 # deploy.sh - Idiot-proof symlink creator
-CONFIGS=("hyprland" "waybar" "swaync" "btop" "ghostty" "lazygit" "neofetch" "nvim" "rofi")
+CONFIGS=("hypr" "waybar" "swaync" "btop" "ghostty" "lazygit" "neofetch" "nvim" "rofi" "niri")
 DOTFILES_DIR="$HOME/my-dotfiles"
 
 if [[ $1 == "--dry-run" ]]; then
