@@ -109,8 +109,9 @@ input {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-output "eDP-2" {
+output "DP-2" {
     // off
+    mode "2560x1440@143.972"
     scale 1
     transform "normal"
     position x=0 y=0
