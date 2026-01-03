@@ -1,6 +1,5 @@
-theme = catppuccin-macchiato.conf
+theme = tokyo-night-night.conf
 shell-integration = bash
-background = #111111
 background-opacity = 1
 background-blur-radius = 20
 
@@ -53,4 +52,3 @@ keybind = ctrl+s>w=close_window
 keybind = ctrl+s>t=new_tab
 
 auto-update = check
-maximize
