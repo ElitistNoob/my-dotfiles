@@ -1,16 +1,16 @@
 return {
 	"catppuccin/nvim",
-	lazy = false,
+	lazy = true,
 	name = "catppuccin",
-	priority = 1000,
+	-- priority = 1000,
 	config = function()
 		require("catppuccin").setup({
 			flavour = "macchiato",
 			custom_highlights = function(colors)
 				return {
-					Normal = { bg = "#111111" },
-					NormalNC = { bg = "#111111" },
-					EndOfBuffer = { bg = "#111111" },
+					-- Normal = { bg = "#111111" },
+					-- NormalNC = { bg = "#111111" },
+					-- EndOfBuffer = { bg = "#111111" },
 				}
 			end,
 		})
