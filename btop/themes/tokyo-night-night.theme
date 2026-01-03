@@ -1,0 +1,51 @@
+# Tokyo Night (Night) theme for btop
+
+theme[main_bg]="#1a1b26"
+theme[main_fg]="#c0caf5"
+theme[title]="#7aa2f7"
+theme[hi_fg]="#bb9af7"
+theme[selected_bg]="#24283b"
+theme[selected_fg]="#c0caf5"
+theme[inactive_fg]="#565f89"
+theme[graph_text]="#a9b1d6"
+theme[meter_bg]="#24283b"
+theme[proc_misc]="#9ece6a"
+
+# CPU
+theme[cpu_box]="#7aa2f7"
+theme[cpu_idle]="#565f89"
+theme[cpu_user]="#7aa2f7"
+theme[cpu_nice]="#bb9af7"
+theme[cpu_system]="#e0af68"
+theme[cpu_iowait]="#ff9e64"
+theme[cpu_irq]="#f7768e"
+theme[cpu_softirq]="#f7768e"
+theme[cpu_steal]="#ff007c"
+
+# Memory
+theme[mem_box]="#9ece6a"
+theme[mem_active]="#7aa2f7"
+theme[mem_inactive]="#bb9af7"
+theme[mem_cached]="#e0af68"
+theme[mem_available]="#9ece6a"
+theme[mem_free]="#565f89"
+
+# Disks
+theme[disk_box]="#e0af68"
+theme[disk_read]="#7aa2f7"
+theme[disk_write]="#f7768e"
+
+# Network
+theme[net_box]="#bb9af7"
+theme[net_upload]="#f7768e"
+theme[net_download]="#7aa2f7"
+
+# Process states
+theme[proc_box]="#7dcfff"
+theme[proc_cpu]="#e0af68"
+theme[proc_mem]="#9ece6a"
+theme[proc_state_running]="#9ece6a"
+theme[proc_state_sleeping]="#7aa2f7"
+theme[proc_state_zombie]="#f7768e"
+theme[proc_state_stopped]="#ff9e64"
+
