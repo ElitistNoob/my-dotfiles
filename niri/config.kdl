@@ -125,7 +125,7 @@ prefer-no-csd
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+   gaps 4
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -184,7 +184,8 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#9ece6a"
+        // active-color "#9ece6a"
+        active-color "#1793d1"
 
         // Color of the ring on inactive monitors.
         //
@@ -391,7 +392,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 20
+    // geometry-corner-radius 20
     clip-to-geometry true
 }
 
@@ -426,7 +427,7 @@ binds {
     Mod+E hotkey-overlay-title="Run an Application: yazi" { spawn-sh "ghostty -e yazi"; }
     Mod+M hotkey-overlay-title="Run an Application: btop" { spawn-sh "ghostty -e btop"; }
     Mod+G hotkey-overlay-title="Run an Application: steam" { spawn "steam"; }
-    Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "hyprlock"; }
+    Super+P hotkey-overlay-title="Lock the Screen: swaylock" { spawn "hyprlock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -593,7 +594,7 @@ binds {
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
-    Shift+Tab { focus-workspace-previous; }
+    Mod+Tab { focus-workspace-previous; }
 
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.

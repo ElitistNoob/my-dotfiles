@@ -72,7 +72,7 @@
         },
         {
           "label": "󰍃",
-          "command": "niri msg action quit"
+          "command": "hyprctl dispatch exit"
         },
         {
           "label": "󰤄",

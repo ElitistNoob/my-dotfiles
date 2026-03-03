@@ -42,7 +42,7 @@ keybind = ctrl+nine=last_tab
 # splits
 keybind = ctrl+s>v=new_split:right
 keybind = ctrl+s>h=new_split:down
-keybind = ctrl+s>x=close_surface 
+keybind = ctrl+s>x=close_surface
 keybind = ctrl+s>right=goto_split:right
 keybind = ctrl+s>left=goto_split:left
 keybind = ctrl+s>up=goto_split:up
